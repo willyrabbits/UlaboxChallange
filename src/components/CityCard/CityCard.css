@@ -1,0 +1,31 @@
+.city-card{
+    /* border: 3px solid black; */
+    /* border-radius: 1em; */
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    overflow-y: hidden;
+}
+
+.city-card-img{
+    width: 6em;
+    padding-top: 1em;
+    transition: width .3s ease-in-out;
+}
+
+.city-card-desc{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 0.5em;
+}
+
+.city-card:hover > .city-card-img {
+    width: 8em;
+}
+.city-card:hover > .city-card-desc {
+    display: none;
+}

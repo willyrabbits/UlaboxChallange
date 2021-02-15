@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Barcelona",
+        "abbreviation": "BCN",
+        "position": {
+            "lat": 41.390205,
+            "lon": 2.154007
+        },
+        "img": "sagrada-familia.png"
+    },
+    {
+        "name": "San Francisco",
+        "abbreviation": "SF",
+        "position": {
+            "lat": 37.773972,
+            "lon": -122.431297
+        },
+        "img": "golden-gate.png"
+    },
+    {
+        "name": "London",
+        "abbreviation": "LDN",
+        "position": {
+            "lat": 51.509865,
+            "lon": -0.118092
+        },
+        "img": "big-ben.png"
+    },
+    {
+        "name": "Paris",
+        "abbreviation": "PAR",
+        "position": {
+            "lat": 48.864716,
+            "lon": 2.349014
+        },
+        "img": "eiffel-tower.png"
+    }
+]
