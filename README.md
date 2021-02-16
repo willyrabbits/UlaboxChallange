@@ -1,7 +1,9 @@
 # Installation
 
 `git clone https://github.com/willyrabbits/UlaboxChallange.git`
+
 `npm install`
+
 `yarn start`
 
 
