@@ -73,6 +73,10 @@ export default function CityWeather() {
     const handleTempUnitChanged = (event, newTempUnitValue) => {
         if (newTempUnitValue !== null) {
             setTempUnit(newTempUnitValue);
+            if (newTempUnitValue === 'C')
+                dispatch({ type: "SET_CELSIUS" })
+            if (newTempUnitValue === 'F')
+                dispatch({ type: "SET_FAHRENHEIT" })
         }
     };
 
