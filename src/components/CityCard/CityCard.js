@@ -9,7 +9,7 @@ export default function CityCard(props) {
     const { city } = props
 
     return (
-        <Link className="city-card" to={`/${city.name}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
+        <Link className="city-card" to={`/${city.name.toLowerCase()}`} style={{ color: 'inherit', textDecoration: 'inherit' }}>
             <img className="city-card-img" alt={`${city.name} skyline`} src={`${PATH_TO_IMG}${city.img}`} />
             <span className="city-card-desc">{city.abbreviation}</span>
         </Link>

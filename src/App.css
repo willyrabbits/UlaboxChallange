@@ -1,31 +1,123 @@
+/* variables */
+:root {
+  --header-height: 9vh;
+  --footer-height: 4vh;
+  --main-color:#FF5D77;
+}
+
+/* main app styles */
 .app {
   text-align: center;
 }
 
 .app-header {
-  background-color: #FF5D77;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: var(--header-height);
   font-size: calc(10px + 2vmin);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header-back{
+  position: absolute;
+  top: calc(var(--header-height)/2 - 23px);
+  left: 1vw;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-content {
   padding: 0 20%;
+  margin-top: var(--header-height);
+  margin-bottom: calc(var(--footer-height));
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.app-content-subtitle {
-  padding: 2%;
-}
 
 .app-footer {
   background-color: #F1F1F1;
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 1% 0;
   color: #333333;
   font-weight: lighter;
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.app-200-blank-separator{
+  height: 200px;
+}
+
+/* home component style */
+.cities-list-container {
+  width: 100%;
+}
+
+.cities-list-container-subtitle {
+  padding: 2%;
+  display: block;
+}
+
+/* detailed weather screen */
+.detail-weather {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+
+.detail-weather-img {
+} 
+
+.detail-weather-info {
+  align-self: start;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+}
+
+.detail-weather-info > .city-name {
+  font-weight: bold;
+}
+
+.detail-weather-info > .city-temp {
+  font-style: italic;
+}
+
+
+.last-reload{
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  color: #777;
+  font-weight: lighter;
+  width: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.last-reload > span{
+  padding-left: 2%;
+  font-size: 1.2em;
+}
+

@@ -1,7 +1,7 @@
 import './CitiesList.css';
 import CityCard from "../CityCard/CityCard.js";
 
-import cities from '../../assets/data/cities.json'
+import cities from '../../data/cities.json'
 
 export default function CitiesList() {
     return (
