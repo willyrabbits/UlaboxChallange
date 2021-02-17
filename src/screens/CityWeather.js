@@ -80,11 +80,15 @@ export default function CityWeather() {
         }
     };
 
-    if (isLoading) return (<Loader color="#FF5D77" size={50} />)
-    if (fetchingError) return (<p>it looks like there is some problem fetching the API, please try again later</p>)
+    if (isLoading) return (
+        <div data-testid="city-weather-loader" >
+            <Loader color="#FF5D77" size={50} />
+        </div>
+    )
+    if (fetchingError) return (<p data-testid="city-weather-error-message">it looks like there is some problem fetching the API, please try again later</p>)
 
     return (
-        <div>
+        <div data-testid="city-weather-screen">
             {realoadTime &&
                 <div className="last-reload">
                     <div onClick={() => getCityWeather(city)}>
