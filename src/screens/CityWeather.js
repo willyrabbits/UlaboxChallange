@@ -115,8 +115,6 @@ export default function CityWeather() {
                     <span>Fahrenheit</span>
                 </ToggleButton>
             </ToggleButtonGroup>
-            <p>tests</p>
-            <p>push to master</p>
         </div>
     )
 }
