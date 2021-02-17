@@ -1,4 +1,4 @@
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import App from '../App';
 import { Provider } from 'react-redux';
 import { store } from '../store/configure-store'
@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 test('check LOAD weather data', () => {
-    const { container, getAllByTestId, getByTestId} = render(
+    const { container, getAllByTestId, getByTestId } = render(
         <Provider store={store}>
             <Router>
                 <App />
