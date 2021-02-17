@@ -43,6 +43,8 @@ Your app is ready to be deployed!
 
 # Future steps
 
+* Improve tests done with 'react testing library', some basics are done, but needs to be improved.
+
 * Implement Jest test. Currently Test are done with React Testing Library which is complatible with Jest.
 
 * Fecth list of cities from somewhere else (curently they are 'hardcoded' in a data file). This way it will be more dynamic and we'll have more options to choose.
