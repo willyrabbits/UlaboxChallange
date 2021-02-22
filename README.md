@@ -56,3 +56,5 @@ Your app is ready to be deployed!
 * Adding localization to the project (i18n) to manage the translations easily. Even if there is only one language, having all the literals in the same file makes it easier to manage them.
 
 * Add media-queries to the CSS files. I have been working with percentages for all my styles, and that's OK for most of the computer screens (I have been 2 screens while developing and I was making sure that the web didn't break the design when changing from one to another). But it is not okay when you try to use this web-app on a smartphone (is not bad either you can still use it 100%).
+
+* Add 404 Page
